@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>What weekday is today?</title>
+    </head>
+    <body>
+        <form action="/" method="post">
+            Year:<input type="number" name="year" min="1900" style="width: 7em" required>
+            Month:<input type="number" name="month" min="1" max="12" style="width: 7em" required>
+            Day:<input type="number" name="day" min="1" max="31" style="width: 7em" required>
+            <input type="submit" value="calculate">
+        </form>
+        {{if . }}
+        <span>{{.}}</span>
+        {{end}}
+    </body>
+</html>
